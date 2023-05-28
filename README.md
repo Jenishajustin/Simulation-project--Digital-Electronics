@@ -39,3 +39,10 @@ In T flip flop, "T" defines the term "Toggle".We can construct the "T Flip Flop"
 ## RESULT
 
 ## REFERENCE
+https://www.electronics-tutorials.ws/counter/count_3.html
+
+https://www.geeksforgeeks.org/counters-in-digital-logic/
+
+https://www.codecubix.eu/electronics/synchronous-decade-counter/
+
+https://www.javatpoint.com/t-flip-flop-in-digital-electronics
