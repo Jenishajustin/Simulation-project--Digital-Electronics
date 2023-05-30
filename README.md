@@ -31,13 +31,31 @@ In T flip flop, "T" defines the term "Toggle".We can construct the "T Flip Flop"
 ![t-flip-flop logic](https://github.com/Jenishajustin/Simulation-project--Digital-Electronics/assets/119405070/749522b2-5117-472d-8ee1-e950e4860979)
 
 ## NETLIST DIAGRAM
+![simurtl](https://github.com/Jenishajustin/Simulation-project--Digital-Electronics/assets/119405070/db8e9cdd-4d5d-4bd5-9041-6d89ea219df4)
 
 ## TIMING DIAGRAM
+![simutime](https://github.com/Jenishajustin/Simulation-project--Digital-Electronics/assets/119405070/496172f4-da64-4f9f-be52-e7fe4674bf6d)
 
 ## PROGRAM
+```
+Program to simulate Decade synchronous upcounter with T- Flip Flop using Verilog.
+NAME : JENISHA.J
+REG.NO : 212222230056
 
+module simuproj (clk,a);
+input clk;
+output reg[0:3]a;
+always@(posedge clk)
+begin
+a[0]=((a[3]&a[0])|(a[1]&a[2]&a[3]))^a[0];
+a[1]=(a[2]&a[3])^a[1];
+a[2]=(a[3]&(~a[0]))^a[2];
+a[3]=1^a[3];
+end
+endmodule
+```
 ## RESULT
-
+Thus the synchronous decade upcounter has been implemented in Quartus Prime and output is verified by using Verilog programming through its truth table.
 ## REFERENCE
 https://www.electronics-tutorials.ws/counter/count_3.html
 
